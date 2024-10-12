@@ -7,7 +7,7 @@ witmotion:
     restart_service_name: /restart_imu
     imu_publisher:
       topic_name: /imu
-      frame_id: base_link
+      frame_id: map
       use_native_orientation: false
       measurements:
         acceleration:
@@ -22,7 +22,7 @@ witmotion:
     magnetometer_publisher:
       enabled: true
       topic_name: /magnetometer
-      frame_id: base_link
+      frame_id: map
       coefficient: 0.00000001 # Linear calibration parameters: coefficient
       addition: 0.0 # and addendum
       covariance:
